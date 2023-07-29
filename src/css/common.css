@@ -21,3 +21,8 @@ img {
   margin-top: 60px;
   max-width: 200px;
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}

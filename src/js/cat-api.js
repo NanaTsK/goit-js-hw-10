@@ -3,8 +3,6 @@ import axios from "axios";
 const API_KEY = "live_kSIRSSuXC66Asfm1UmGRFimLVxLxKgZLpH0ehQLig7yUCgW8RM2ZryaFPNo8SDAW";
 axios.defaults.headers.common["x-api-key"] = API_KEY;
 
-// axios.defaults.headers.common["x-api-key"] = "live_kSIRSSuXC66Asfm1UmGRFimLVxLxKgZLpH0ehQLig7yUCgW8RM2ZryaFPNo8SDAW";
-
 const BASE_URL = "https://api.thecatapi.com/v1";
 
 function fetchBreeds() { 
@@ -13,7 +11,7 @@ function fetchBreeds() {
             if (!resp.ok) { 
                 throw new ErrorEvent(resp.statusText)
             }
-            return resp.data()
+            return resp.data
         })
 };
 
@@ -23,7 +21,7 @@ function fetchCatByBreed(breedId) {
             if (!resp.ok) { 
                 throw new ErrorEvent(resp.statusText)
             }
-            return resp.data()
+            return resp.data
         })
 }
 

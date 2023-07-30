@@ -40,9 +40,8 @@ body {
   display: block;
   width: 500px;
   height: auto;
-  /* object-fit: contain; */
   margin-right: 20px;
-  background-color: beige;
+  background-color: #fffbf6;
 }
 
 .cat-info h2,

@@ -41,7 +41,7 @@ function createCard(selectedCat) {
     <article class="flex-container">
   <img
     src="${selectedCat.url}"
-    alt="🐾 ${selectedCat.breeds[0].name}"
+    alt="${selectedCat.breeds[0].name} 🐈"
     width="500"
     height="auto"/>
   <div class="cat-card">

@@ -37,7 +37,19 @@ function createOptions(arrCats) {
 }
 
 function createCard(selectedCat) {
-    CatInfo.innerHTML = `<article class="flex-container"><img src=${selectedCat.url} alt=${selectedCat.breeds[0].name} width="300"><div class="thumb"><h3>${selectedCat.breeds[0].name}</h3><p>${selectedCat.breeds[0].description}</p><p><b>Temperament: </b>${selectedCat.breeds[0].temperament}</p></div></article>`;
+    CatInfo.innerHTML = `
+    <article class="flex-container">
+  <img
+    src="${selectedCat.url}"
+    alt="🐾 ${selectedCat.breeds[0].name}"
+    width="500"
+    height="auto"/>
+  <div class="cat-card">
+    <h2>${selectedCat.breeds[0].name} 🐈</h2>
+    <p>${selectedCat.breeds[0].description}</p>
+    <p><b>Temperament: </b>${selectedCat.breeds[0].temperament}</p>
+  </div></article>
+    `;
 }
 
 function handlerSelect(elem) {
@@ -51,8 +63,11 @@ function handlerSelect(elem) {
         .catch(error => {
             Report.failure(
                 'Oops! Something went wrong!',
-                '🐾  Try reloading the page!',
-                'OK'
+                '🐾 Try reloading the page!',
+                'OK',
+                {
+          plainText: 'center',
+        }
             );
         })
         .finally(Loading.remove());

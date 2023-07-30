@@ -12,17 +12,51 @@ body {
   line-height: 1.5;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  /* object-fit: cover; */
-}
 .breed-select {
   margin-top: 60px;
-  max-width: 200px;
+  max-width: 500px;
+  margin-bottom: 20px;
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+.cat-card {
+  width: 500px;
+}
+
+.flex-container {
+  display: flex;
+  width: 1000px;
+}
+
+.cat-info {
+  display: flex;
+}
+
+.cat-info img {
+  display: block;
+  width: 500px;
+  height: auto;
+  /* object-fit: contain; */
+  margin-right: 20px;
+  background-color: beige;
+}
+
+.cat-info h2,
+p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.cat-card {
+  flex: 1;
+}
+
+.loader-box {
+  width: 150px;
+  display: flex;
+  justify-content: center;
 }

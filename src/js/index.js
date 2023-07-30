@@ -7,7 +7,6 @@ import 'slim-select/dist/slimselect.css';
 const breedList = document.querySelector('.breed-select');
 const CatInfo = document.querySelector('.cat-info');
 const loader = document.querySelector('.loader');
-// const error = document.querySelector('.error');
 
 breedList.addEventListener('change', handlerSelect);
 

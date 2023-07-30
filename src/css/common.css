@@ -12,19 +12,15 @@ body {
   line-height: 1.5;
 }
 
-.breed-select {
-  margin-top: 60px;
-  max-width: 500px;
-  margin-bottom: 20px;
-}
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
 }
 
-.cat-card {
-  width: 500px;
+.breed-select {
+  margin-top: 60px;
+  max-width: 500px;
+  margin-bottom: 20px;
 }
 
 .flex-container {
@@ -42,6 +38,7 @@ body {
   height: auto;
   margin-right: 20px;
   background-color: #fffbf6;
+  border-radius: 12px;
 }
 
 .cat-info h2,

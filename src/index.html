@@ -4,35 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🐾 HW 10</title>
-    <link rel="stylesheet" href="./css/loader.css" />
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
-    <select class="breed-select"></select>
-
-    <div class="loading">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
+    <select class="breed-select is-hidden"></select>
+    <!-- <p class="loader">Loading data, please wait...</p> -->
+    <span class="loader"></span>
+    <!-- <p class="error">
+      Oops! Something went wrong! Try reloading the page!
+    </p> -->
+    <div class="cat-info is-hidden"></div>
 
     <script src="./js/index.js" type="module"></script>
   </body>
 </html>
-
-<!-- <img src="${x}" alt="${xx}" />
-<h2>${xx}</h2>
-<p>${xx}</p>
-<h3>${xx}</h3>
-
-<article class="flex-container">
-  <img src=${selectedCat.url} alt=${selectedCat.breeds[0].name} width="300">
-  <div class="thumb">
-    <h3>${selectedCat.breeds[0].name}</h3>
-    <p>${selectedCat.breeds[0].description}</p>
-    <p><b>Temperament: </b>${selectedCat.breeds[0].temperament}</p>
-  </div></article> -->

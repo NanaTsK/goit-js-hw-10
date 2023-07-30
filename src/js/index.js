@@ -41,7 +41,7 @@ function createCard(selectedCat) {
   <img
     src="${selectedCat.url}"
     alt="${selectedCat.breeds[0].name} 🐈"
-    width="500"
+    width="400"
     height="auto"/>
   <div class="cat-card">
     <h2>${selectedCat.breeds[0].name} 🐈</h2>
